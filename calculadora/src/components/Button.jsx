@@ -9,7 +9,7 @@ export default props =>{
 
     return( 
         <button className={classes}
-            onClick={e => props.click(props.label)}>
+            onClick={e => props.click && props.click(props.label)}>
             {props.label}
         </button>
     )
